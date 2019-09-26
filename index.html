@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>测试给不给屌丝买2077</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form id="main" class="container">
+      <h1 id="buy" class="text-center">测试给不给屌丝买 Cyberpunk 2077</h1>
+
+      <fieldset>
+        <legend>今年是哪一年？</legend>
+        <input
+          class="input-group"
+          type="number"
+          id="year"
+          placeholder="输入今年，2019"
+          required
+          autofocus
+        />
+        <span id="year-valid">输入哪一年好吗？</span>
+      </fieldset>
+      <fieldset>
+        <legend>游戏多少钱？</legend>
+        <input
+          class="input-group"
+          type="number"
+          id="game"
+          placeholder="多少钱？比如"
+          required
+        />
+        <span id="game-valid">问你呢？</span>
+      </fieldset>
+      <fieldset>
+        <legend>你傻吗？</legend>
+        <input
+          class="input-group"
+          type="text"
+          id="fool"
+          value="我傻"
+          placeholder="是就完事了"
+          required
+        />
+      </fieldset>
+
+      <button type="submit" id="test" class="btn btn-primary btn-block">
+        深度测试
+      </button>
+      <button
+        type="submit"
+        id="rs"
+        class="btn btn-warning btn-block"
+        style="display:none"
+      >
+        重新测试
+      </button>
+
+      <div class="spin text-center">
+        <div
+          class="spinner-border text-success mx-auto mt-3"
+          role="status"
+          style="width:80px;height:80px"
+        >
+          <span class="sr-only">学习中...</span>
+        </div>
+        <h6>学习中...</h6>
+      </div>
+    </form>
+    <div id="output" class="text-center mt-5">
+      <ul>
+        <h6>你的选择是:</h6>
+        <li id="choice-year"></li>
+        <li id="choice-game"></li>
+        <li id="choice-fool"></li>
+      </ul>
+      <div>
+        经过机器学习和深度神经网络学习得出结论(正确率高达<span
+          id="percent"
+        ></span
+        >以上)：
+        <h3 id="result"></h3>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
